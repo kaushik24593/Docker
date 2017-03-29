@@ -1,5 +1,5 @@
-FROM blitznote/debootstrap-amd64:16.10\
-EXPOSE 443\
-RUN apt-get update < /dev/null\
-RUN apt-get -y  install apache2\
-CMD ["apache2ctl", "-D", "FOREGROUND"]}
+FROM blitznote/debootstrap-amd64:16.10
+EXPOSE 443
+RUN apt-get update < /dev/null
+RUN apt-get -y  install apache2
+CMD ["apache2ctl", "-D", "FOREGROUND"]
